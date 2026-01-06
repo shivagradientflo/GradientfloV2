@@ -1,7 +1,7 @@
 
-  # Gradientflo (Community)
+  # Landing Page
 
-  This is a code bundle for Gradientflo (Community). The original project is available at https://www.figma.com/design/KUKm6pQRvWhj9brt50G4y0/Gradientflo--Community-.
+  This is a code bundle for Landing Page. The original project is available at https://www.figma.com/design/ap8wIT7adTIXQLa5bucd0X/Landing-Page.
 
   ## Running the code
 

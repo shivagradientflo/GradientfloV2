@@ -1,7 +1,5 @@
-import ZBlack from "../imports/ZBlack";
+import ResponsiveZBlack from "./components/ResponsiveZBlack";
 
 export default function App() {
-  return (
-    <ZBlack />
-  );
+  return <ResponsiveZBlack />;
 }
