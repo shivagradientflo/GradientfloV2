@@ -1,18 +1,16 @@
-import React from "react";
-import { cn } from "../app/components/ui/utils";
 import svgPaths from "./svg-t8r1oo2mbu";
-import imgAsset from "../assets/e74ed57f623576498a1f0340b9ad5bdc7f657aa9.png";
-import imgLandingPage from "../assets/650d86442a820f91b924773434726a411940b840.png";
-import imgVector from "../assets/2b1d9a5e6cf7343e4b5597e8a6b1e3d742df6b36.png";
-import imgImage2931 from "../assets/fc4c1da3e4d3751f17961237b85c2eacf57a532a.png";
-import imgImage2934 from "../assets/cf4825c7376ad293ca05411829897710b194e87a.png";
-import imgImage2935 from "../assets/f8c850e36ac991c421b9a1d8743c1f4470170466.png";
-import imgBg from "../assets/b0d02872668f001c61aa16d7f41eb0300de0048f.png";
-import imgImage28 from "../assets/7a87265cc4a78a5a91b37da48f26ada2c297e1d7.png";
-import imgImage20 from "../assets/783c298a5ed92a8266c6c0c30e12abae775b6db5.png";
-import imgImage23 from "../assets/a65a2d8987a0f00640c42f9410a08c9691836632.png";
-import imgIconJpeg from "../assets/f17e01fd97a13cee96e180ff16060055fd4dcb77.png";
-import imgBg1 from "../assets/b6fc6fa5d7659777c426b57af395adb3f5245c6b.png";
+import imgAsset from "figma:asset/e74ed57f623576498a1f0340b9ad5bdc7f657aa9.png";
+import imgLandingPage from "figma:asset/650d86442a820f91b924773434726a411940b840.png";
+import imgVector from "figma:asset/2b1d9a5e6cf7343e4b5597e8a6b1e3d742df6b36.png";
+import imgImage2931 from "figma:asset/fc4c1da3e4d3751f17961237b85c2eacf57a532a.png";
+import imgImage2934 from "figma:asset/cf4825c7376ad293ca05411829897710b194e87a.png";
+import imgImage2935 from "figma:asset/f8c850e36ac991c421b9a1d8743c1f4470170466.png";
+import imgBg from "figma:asset/b0d02872668f001c61aa16d7f41eb0300de0048f.png";
+import imgImage28 from "figma:asset/7a87265cc4a78a5a91b37da48f26ada2c297e1d7.png";
+import imgImage20 from "figma:asset/783c298a5ed92a8266c6c0c30e12abae775b6db5.png";
+import imgImage23 from "figma:asset/a65a2d8987a0f00640c42f9410a08c9691836632.png";
+import imgIconJpeg from "figma:asset/f17e01fd97a13cee96e180ff16060055fd4dcb77.png";
+import imgBg1 from "figma:asset/b6fc6fa5d7659777c426b57af395adb3f5245c6b.png";
 import { imgSvg, imgGroup, imgSvg1, imgGroup1, imgGroup2, imgGroup3 } from "./svg-m86mj";
 
 function Frame19() {
@@ -27,52 +25,140 @@ function Frame19() {
   );
 }
 
-const NAV_ITEMS = [
-  { label: "Why" },
-  { label: "Agents" },
-  { label: "Enterprise" },
-  { label: "Features" },
-  { label: "Use Cases" },
-  { label: "Blogs" },
-];
-
-type NavLinkProps = {
-  label: string;
-};
-
-function NavLink(props: NavLinkProps) {
-  const { label } = props;
+function Link() {
   return (
-    <button
-      type="button"
-      className={cn(
-        "content-stretch flex items-center justify-center pb-[5.25px] pt-[3.75px] px-[12px] relative rounded-[3.35544e+07px] shrink-0",
-      )}
-      data-name="Link"
-      aria-label={label}
-    >
-      <div className="flex flex-col font-['Geist_Mono:Regular',sans-serif] font-normal justify-center leading-none relative shrink-0 text-[15px] text-center text-nowrap text-white tracking-[-0.3px]">
-        <p className="leading-[normal]">{label}</p>
+    <div className="content-stretch flex items-center justify-center pb-[5.25px] pt-[3.75px] px-[12px] relative rounded-[3.35544e+07px] shrink-0" data-name="Link">
+      <div className="flex flex-col font-['Geist_Mono:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white tracking-[-0.3px]">
+        <p className="leading-[normal]">Why</p>
       </div>
-    </button>
+    </div>
+  );
+}
+
+function Item() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Item">
+      <Link />
+    </div>
+  );
+}
+
+function Link1() {
+  return (
+    <div className="content-stretch flex items-center justify-center pb-[5.25px] pt-[3.75px] px-[12px] relative rounded-[3.35544e+07px] shrink-0" data-name="Link">
+      <div className="flex flex-col font-['Geist_Mono:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white tracking-[-0.3px]">
+        <p className="leading-[normal]">Agents</p>
+      </div>
+    </div>
+  );
+}
+
+function Item1() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Item">
+      <Link1 />
+    </div>
+  );
+}
+
+function Link2() {
+  return (
+    <div className="content-stretch flex items-center justify-center pb-[5.25px] pt-[3.75px] px-[12px] relative rounded-[3.35544e+07px] shrink-0" data-name="Link">
+      <div className="flex flex-col font-['Geist_Mono:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white tracking-[-0.3px]">
+        <p className="leading-[normal]">Enterprise</p>
+      </div>
+    </div>
+  );
+}
+
+function Item2() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Item">
+      <Link2 />
+    </div>
+  );
+}
+
+function Link3() {
+  return (
+    <div className="content-stretch flex items-center justify-center pb-[5.25px] pt-[3.75px] px-[12px] relative rounded-[3.35544e+07px] shrink-0" data-name="Link">
+      <div className="flex flex-col font-['Geist_Mono:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white tracking-[-0.3px]">
+        <p className="leading-[normal]">Features</p>
+      </div>
+    </div>
+  );
+}
+
+function Item3() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Item">
+      <Link3 />
+    </div>
+  );
+}
+
+function Link4() {
+  return (
+    <div className="content-stretch flex items-center justify-center pb-[5.25px] pt-[3.75px] px-[12px] relative rounded-[3.35544e+07px] shrink-0" data-name="Link">
+      <div className="flex flex-col font-['Geist_Mono:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white tracking-[-0.3px]">
+        <p className="leading-[normal]">Use Cases</p>
+      </div>
+    </div>
+  );
+}
+
+function Item4() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Item">
+      <Link4 />
+    </div>
+  );
+}
+
+function Link5() {
+  return (
+    <div className="content-stretch flex items-center justify-center pb-[5.25px] pt-[3.75px] px-[12px] relative rounded-[3.35544e+07px] shrink-0" data-name="Link">
+      <div className="flex flex-col font-['Geist_Mono:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[15px] text-center text-nowrap text-white tracking-[-0.3px]">
+        <p className="leading-[normal]">Blogs</p>
+      </div>
+    </div>
+  );
+}
+
+function Item5() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Item">
+      <Link5 />
+    </div>
+  );
+}
+
+function List() {
+  return (
+    <div className="content-stretch flex gap-[4px] items-center justify-center relative shrink-0" data-name="List">
+      <Item />
+      <Item1 />
+      <Item2 />
+      <Item3 />
+      <Item4 />
+      <Item5 />
+    </div>
+  );
+}
+
+function Container() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container">
+      <List />
+    </div>
   );
 }
 
 function NavMain() {
   return (
-    <nav
-      className="basis-0 content-stretch flex grow items-center justify-center min-h-px min-w-px relative shrink-0"
-      data-name="Nav - Main"
-      aria-label="Primary"
-    >
-      <div className="content-stretch flex gap-[4px] items-center justify-center relative shrink-0" data-name="List">
-        {NAV_ITEMS.map((item) => (
-          <div key={item.label} className="content-stretch flex flex-col items-start relative shrink-0" data-name="Item">
-            <NavLink {...item} />
-          </div>
-        ))}
-      </div>
-    </nav>
+    <div className="basis-0 content-stretch flex grow items-center justify-center min-h-px min-w-px relative shrink-0" data-name="Nav - Main">
+      <Container />
+    </div>
   );
 }
 

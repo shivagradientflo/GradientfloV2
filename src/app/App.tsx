@@ -1,5 +1,7 @@
-import ResponsiveZBlack from "./components/ResponsiveZBlack";
+import { LandingPage } from "./components/landing/landing-page";
 
 export default function App() {
-  return <ResponsiveZBlack />;
+  return (
+    <LandingPage />
+  );
 }
